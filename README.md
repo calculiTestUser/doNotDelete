@@ -1,3 +1,2 @@
 # sample
-somethings
-personal repository
+personal repository for somethings, anythings, allthings
