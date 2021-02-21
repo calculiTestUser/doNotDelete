@@ -1,6 +1,6 @@
 {
 	"metadata": {
-		"version": 1
+		"version": 2
 	},
 	"application": {
 		"name": "OnboardMultiple",
@@ -60,7 +60,7 @@
 				},
 				"tasks": [
 					{
-						"name": "OnboardMultiple",
+						"name": "((application.name))",
 						"steps": [
 							{
 								"name": "Get Dependencies",
