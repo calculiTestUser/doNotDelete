@@ -65,13 +65,19 @@
 							{
 								"name": "Get Dependencies",
 								"definition": "Get Dependencies",
-								"command": "go get -t -d ./...",
+								"command": "go get -t -d ./...\n",
 								"properties": null
 							},
 							{
 								"name": "Build",
 								"definition": "Build",
 								"command": "go build -o ((application.name))",
+								"properties": null
+							},
+							{
+								"name": "Unit Test",
+								"definition": "Unit Test",
+								"command": "go test",
 								"properties": null
 							}
 						],
