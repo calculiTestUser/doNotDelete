@@ -1,13 +1,17 @@
 package main
 
-import "fmt"
-
-func f1() {
-	fmt.Println("f1")
-}
+import (
+	"fmt"
+	"net/http"
+)
 
 func main() {
-	fmt.Println("main")
-	f1()
-}
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		fmt.Fprintf(w, "Welcome to my website!")
+	})
 
+	fs := http.FileServer(http.Dir("static/"))
+	http.Handle("/static/", http.StripPrefix("/static/", fs))
+
+	http.ListenAndServe(":8080", nil)
+}
