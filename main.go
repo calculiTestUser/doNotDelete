@@ -15,3 +15,7 @@ func main() {
 
 	http.ListenAndServe(":8080", nil)
 }
+
+func getPort() int {
+	return 8080
+}

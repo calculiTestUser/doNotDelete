@@ -2,6 +2,9 @@ package main
 
 import "testing"
 
-func TestF1(t *testing.T) {
-	f1()
+func TestPort(t *testing.T) {
+	p := getPort()
+	if p != 8080 {
+		t.Error("expected port to be 8080")
+	}
 }
