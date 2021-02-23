@@ -91,6 +91,14 @@
 				"run_after": [
 					"Build"
 				],
+				"job_steps": [
+					{
+						"name": "Test app is running",
+						"definition": "Test app is running",
+						"command": "curl http://localhost:8080/",
+						"properties": null
+					}
+				],
 				"exit_actions": {},
 				"deployment_strategy": {
 					"canaries": 1,
