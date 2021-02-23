@@ -77,7 +77,7 @@
 							{
 								"name": "Unit Test",
 								"definition": "Unit Test",
-								"command": "go test -coverprofile=coverage.out -json \u003e test-report.json\n\ncp coverage.out test-report.json ${TEST_LOGS_DIR}",
+								"command": "go test -coverprofile=coverage.out -json \u003e test-report.json\n\ncp coverage.out test-report.json ${BUILD_LOGS_DIR}",
 								"properties": null
 							}
 						],
