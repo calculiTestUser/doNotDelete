@@ -216,7 +216,11 @@
 		"application_init": {
 			"command": "bin/start-service.sh"
 		},
-		"process": {},
+		"process": {
+			"init": {
+				"command": "bin/start-app.sh"
+			}
+		},
 		"releases": [
 			{
 				"name": "consul",
